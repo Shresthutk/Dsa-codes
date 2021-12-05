@@ -80,6 +80,22 @@ node* deletion(node* root,int val){
     }
     return root;
 }
+int height(node* root){
+      int rHeight,lHeight;
+    if(root==NULL){
+        return -1;
+    }
+    else{
+         lHeight=height(root->left);
+         rHeight=height(root->right);
+        if(lHeight>rHeight){
+            return lHeight+1;
+        }
+        else{
+            return rHeight+1;
+        }
+    }
+}
 int main(){
     //naive way
     // root=insertBST(root,1);
@@ -108,4 +124,6 @@ int main(){
     cout<<endl;
     deletion(root,4);
     inorder(root);
+    cout<<endl;
+    cout<<height(root);
 }

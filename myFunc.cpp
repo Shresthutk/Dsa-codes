@@ -18,3 +18,6 @@ void display(int *arr, int size)
 int length(int* arr){
     return (sizeof(arr)/sizeof(int));
 }
+int max(int a,int b){
+    return (a>b)?a:b;
+}
