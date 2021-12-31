@@ -19,18 +19,6 @@ public:
     }
 };
 
-
-// node* newNode(int key)
-// {
-//     node* n = new node();
-//     n->data = key;
-//     n->left = NULL;
-//     n->right = NULL;
-//     n->height = 1; // new node is initially
-//                       // added at leaf
-//     return(n);
-// }
-
 int getHeight(node *n)
 {
     if (n == NULL)
