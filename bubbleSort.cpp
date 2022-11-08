@@ -1,19 +1,7 @@
 #include <iostream>
+#include "myFunc.cpp"
 using namespace std;
-void swap(int *a, int *b)
-{
-    int temp = *b;
-    *b = *a;
-    *a = temp;
-}
-void display(int *arr, int size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}
+
 /*
 So what happens here is in the first pass we only need to swap till before size-1 beacause
 the biggest element already gets sorted

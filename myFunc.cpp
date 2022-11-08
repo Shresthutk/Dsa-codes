@@ -21,3 +21,11 @@ int length(int* arr){
 int max(int a,int b){
     return (a>b)?a:b;
 }
+
+void reverse(int* arr,int low,int high){
+    while(low<high){
+        swap(arr[low],arr[high]);
+        low++;
+        high--;
+    }
+}

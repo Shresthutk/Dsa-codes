@@ -2,6 +2,16 @@
 #include "myFunc.cpp"
 using namespace std;
 
+void mergeSort(int* A,int low,int high){
+    int mid;
+    if(low<high){
+        mid=(low+high)/2;
+        mergeSort(A,low,mid);
+        mergeSort(A,mid+1,high);
+        merge(A,low,mid,high);
+    }
+}
+
 void merge(int* A,int low,int mid,int high){
     int i,j,k;
     i=low;
@@ -40,15 +50,6 @@ void merge(int* A,int low,int mid,int high){
     }
 }
 
-void mergeSort(int* A,int low,int high){
-    int mid;
-    if(low<high){
-        mid=(low+high)/2;
-        mergeSort(A,low,mid);
-        mergeSort(A,mid+1,high);
-        merge(A,low,mid,high);
-    }
-}
 
 int main(){
      int A[] = {9, 1, 4, 14, 4, 15, 6};

@@ -28,10 +28,11 @@ void insertAtTail(node* &head,int val){
 
 void display(node* head){
     node* temp=head;
-    do{
-        cout<<temp->data<<" ";
-        temp=temp->next;
-    }while(temp!=head);
+   do{
+       cout<<temp->data<<" ";
+       temp=temp->next;
+   }
+   while(temp!=head);
 }
 int main(){
     node* head=NULL;

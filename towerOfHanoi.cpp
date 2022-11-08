@@ -11,5 +11,5 @@ void toh(int n,int td1,int td2,int td3){
 }
 
 int main(){
-    toh(3,1,3,2);
+    toh(3,1,2,3);
 }
