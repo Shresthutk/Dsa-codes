@@ -16,12 +16,14 @@ class stack{
     }
 };
 
-class stackNode{
-    public:
-    stackNode(){
-        stack* head=NULL;
-    }
-};
+//used to create stacknode also
+
+// class stackNode{
+//     public:
+//     stackNode(){
+//         stack* head=NULL;
+//     }
+// };
 
 void push(stack* &head,int value){
 
