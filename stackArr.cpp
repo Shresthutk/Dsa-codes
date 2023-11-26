@@ -28,18 +28,14 @@ class stack{
     }
     int Top(){
         if (top==-1){
-            cout<<"No element to pop"<<endl;
+            cout<<"No element to show"<<endl;
             return -1;
         }
 
         return arr[top];
     }
     bool empty(){
-        if(top==-1){
-            return true;
-        }
-        else 
-        return false;
+        return (top==-1);
     }
 };
 int main(){
@@ -47,4 +43,5 @@ int main(){
     st.push(15);
     st.push(4);
     cout<<st.Top();
+    cout<<st.empty();
 }
